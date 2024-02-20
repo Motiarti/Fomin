@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "logOne.log",
+    "LogPath": "D:\\JLearn\\LogHandler\\",
+    "id": "001"
+  },
+  {
+    "Name": "logTwo.log",
+    "LogPath": "D:\\JLearn\\LogHandler\\",
+    "id": "002"
+  },
+  {
+    "Name": "logThree.log",
+    "LogPath": "D:\\JLearn\\LogHandler\\",
+    "id": "003"
+  }
+]
