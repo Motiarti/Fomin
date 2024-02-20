@@ -89,7 +89,7 @@ public class App {
     public static void writeFile() {
         File hello = new File("D:\\JLearn\\Terehov\\hello.txt");
         try {
-            String text = "Привет";
+            String text = "РџСЂРёРІРµС‚";
             long lastModified = hello.lastModified();
             try (FileOutputStream inFile = new FileOutputStream(hello)) {
                 byte[] buffer = text.getBytes(StandardCharsets.UTF_8);
@@ -108,7 +108,7 @@ public class App {
         String str = "";
         try {
             try (FileInputStream fileForRead = new FileInputStream("D:\\JLearn\\Terehov\\hello.txt")) {
-                System.out.println("Размер файла: " + fileForRead.available());
+                System.out.println("Р Р°Р·РјРµСЂ С„Р°Р№Р»Р°: " + fileForRead.available());
                 int i;
 
                 while ((i = fileForRead.read()) != -1) {
