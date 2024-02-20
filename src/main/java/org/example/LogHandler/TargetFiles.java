@@ -1,4 +1,4 @@
-package ru.Sberbank.LogHandler;
+package org.example.LogHandler;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package ru.Sberbank.LogHandler;
+package org.example.LogHandler;
 
 import java.io.FileWriter;
 import java.io.IOException;

@@ -1,8 +1,8 @@
-package ru.Sberbank;
+package org.example;
 
-import ru.Sberbank.LessonCollection.Person;
-import ru.Sberbank.LogHandler.LogWriter;
-import ru.Sberbank.LogHandler.TargetFiles;
+import org.example.LessonCollection.Person;
+import org.example.LogHandler.LogWriter;
+import org.example.LogHandler.TargetFiles;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
