@@ -1,8 +1,10 @@
-package ru.Sberbank;
+package org.example;
 
-import ru.Sberbank.LessonCollection.Person;
-import ru.Sberbank.LogHandler.LogWriter;
-import ru.Sberbank.LogHandler.TargetFiles;
+// FIXME
+// import org.example.LessonCollection.Person;
+
+import org.example.LogHandler.LogWriter;
+import org.example.LogHandler.TargetFiles;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -15,7 +17,7 @@ import java.util.List;
 
 public class App {
 
-
+    // TODO: replace absolute path with relative path
     static String file = "D:\\JLearn\\Terehov\\src\\test\\java\\ru\\Sberbank\\LogHandler\\Logs.json";
     static TargetFiles tf = new TargetFiles();
     static LogWriter lw = new LogWriter();
@@ -69,27 +71,31 @@ public class App {
 //        }
 //    }
 
-    public static void writeObject(Person p, String fileName) {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
-            oos.writeObject(p);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+// FIXME
+//    public static void writeObject(Person p, String fileName) {
+//        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
+//            oos.writeObject(p);
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//    }
 
-    public static Person readObject(String fileName) {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
-            return (Person) ois.readObject();
-        } catch (IOException | ClassNotFoundException e) {
-            System.out.println(e.getMessage());
-            return new Person(0, "", "", 0);
-        }
-    }
+// FIXME
+//    public static Person readObject(String fileName) {
+//        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
+//            return (Person) ois.readObject();
+//        } catch (IOException | ClassNotFoundException e) {
+//            System.out.println(e.getMessage());
+//            return new Person(0, "", "", 0);
+//        }
+//    }
 
     public static void writeFile() {
+        // TODO: replace absolute path with relative path
+        //   also move path to class member to reduce code duplicates
         File hello = new File("D:\\JLearn\\Terehov\\hello.txt");
         try {
-            String text = "Ïðèâåò";
+            String text = "ÐŸÑ€Ð¸Ð²ÐµÑ‚";
             long lastModified = hello.lastModified();
             try (FileOutputStream inFile = new FileOutputStream(hello)) {
                 byte[] buffer = text.getBytes(StandardCharsets.UTF_8);
@@ -108,7 +114,7 @@ public class App {
         String str = "";
         try {
             try (FileInputStream fileForRead = new FileInputStream("D:\\JLearn\\Terehov\\hello.txt")) {
-                System.out.println("Ðàçìåð ôàéëà: " + fileForRead.available());
+                System.out.println("Ð Ð°Ð·Ð¼ÐµÑ€ Ñ„Ð°Ð¹Ð»Ð°: " + fileForRead.available());
                 int i;
 
                 while ((i = fileForRead.read()) != -1) {
